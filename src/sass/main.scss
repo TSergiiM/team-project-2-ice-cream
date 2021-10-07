@@ -4,12 +4,18 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './header';
-@import './hero';
-@import './products';
-@import './about';
-@import './advantages';
-@import './gallery';
-@import './customer-reviews';
-@import './contacts';
-@import './footer';
+@import './Utility/variables';
+@import './Utility/visually-hidden';
+@import './base/reset';
+@import './base/body';
+@import './base/container';
+@import './base/section';
+@import './header/header';
+@import './components/hero';
+@import './components/products';
+@import './components/about';
+@import './components/advantages';
+@import './components/customer-reviews';
+@import './components/gallery';
+@import './components/contacts';
+@import './footer/footer';
