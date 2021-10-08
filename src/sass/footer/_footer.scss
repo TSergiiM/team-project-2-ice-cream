@@ -1,0 +1,92 @@
+
+.footer-box__text{
+    font-family: 'Titan One', cursive;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 1.17;
+text-transform: uppercase;
+color: $secondary-text-color;
+width: 232px;
+}
+
+.footer-box__title{
+  font-family: $primary-font-family;
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 1.15;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: $primary-text-color;
+width: 200px;
+}
+.networks {
+  display: flex;
+  
+}
+
+.networks__item {
+  width: 32px;
+  height: 32px;
+}
+
+.networks__item:not(:last-child) {
+  margin-right: 28px;
+}
+
+
+.networks__icon {
+  width: 20px;
+  height: 20px;
+  fill: $secondary-text-color;
+  transition: fill var(--time) var(--main-function);
+}
+
+ .networks__link:hover .networks__icon,
+  .networks__link:focus .networks__icon {
+    fill: $primary-text-color;
+  }
+
+  .footer-contacts{
+    display: inline-block;
+    font-family: $secondary-font-family;
+font-weight: 700;
+font-size: 12px;
+line-height: 1.86;
+color: #000000;
+  }
+  .link{
+    display: inline-block;
+    font-family: $secondary-font-family;
+font-weight: 700;
+font-size: 12px;
+line-height: 1.86;
+color: $primary-text-color;
+  }
+  .box{
+    display: inline-block;
+  }
+  
+  
+  .footer-down{
+font-family: $secondary-font-family;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.52;
+text-align: center;
+color: $third-text-color;
+  }
+
+.footer-networks-contacts{
+    display: inline-block;
+    
+}
+
+.box{
+border-bottom: 1px solid yellow;
+    @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+}
+}
