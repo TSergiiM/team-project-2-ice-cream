@@ -6,6 +6,12 @@
     border: transparent;
     padding: 10px 37px;
 
+    font-family: $secondary-font-family;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
@@ -21,6 +27,12 @@
     cursor: pointer;
     border: transparent;
     padding: 10px 37px;
+
+    font-family: $secondary-font-family;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
