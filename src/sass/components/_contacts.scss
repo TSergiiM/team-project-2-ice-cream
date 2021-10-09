@@ -1,0 +1,84 @@
+.contacts-section {
+  background-color: tomato;
+}
+.contacts {
+  margin-bottom: 54px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.contacts__item {
+  padding: 43px 20px;
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+}
+.contacts__categories {
+  display: inline-block;
+  margin-bottom: 25px;
+  background: #f0d1a5;
+  border-radius: 6px;
+  padding: 8px 16px;
+}
+.contacts__categories--green {
+  background: #c2e297;
+}
+
+.contacts__tittle {
+  margin-bottom: 10px;
+  color: #000000;
+}
+.contacts__subscribe {
+  margin-bottom: 60px;
+  position: relative;
+  display: block;
+  color: #907e82;
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: calc(100% + 30px);
+    border: 1px solid #e1e1e1;
+  }
+}
+.contacts-shedule {
+  margin-bottom: 60px;
+  position: relative;
+  display: block;
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: calc(100% + 30px);
+    border: 1px solid #e1e1e1;
+  }
+}
+.contacts-shedule__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.contacts-day {
+  color: #000000;
+}
+.contacts-time {
+  display: block;
+  margin-top: 10px;
+  color: #ffa5ba;
+}
+.contacts-address__link {
+  color: #907e82;
+}
+.contacts-address__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
