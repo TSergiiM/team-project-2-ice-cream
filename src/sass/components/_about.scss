@@ -35,8 +35,6 @@
     }
 }
 
-.about {}
-
 .about__title {
     @media screen and (max-width: 767px) {
         max-width: 200px;
@@ -59,12 +57,12 @@
 
 .about__description {
     @media screen and (min-width: 768px) {
-        width: 340px;
+        max-width: 340px;
         margin-top: 100px;
         margin-left: 20px;
     }
     @media screen and (min-width: 1280px) {
-        width: 463px;
+        max-width: 463px;
         margin-top: 110px;
         margin-left: 75px;
     }
