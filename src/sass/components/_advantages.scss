@@ -1,22 +1,22 @@
-ul,
-p {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.advantages__container {
-  padding-left: 20px;
-  padding-right: 20px;
+.advantages {
+  background-color: $first-section-background-color;
 }
 .advantages__list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and(max-width:1279px) {
+    margin: -30px;
+    display: flex;
+  }
+  @media screen and(min-width:1280px) {
     display: flex;
     margin: -15px;
   }
 }
+.item__iconfirst::before {
+  background-image: url();
+}
 .advantages__item {
   @media screen and(max-width:767px) {
-    font-family: Titan One;
+    font-family: $primary-font-family;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -24,35 +24,72 @@ p {
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
-    color: #d41443;
+    color: $primary-text-color;
 
     &:not(:last-child) {
       padding-bottom: 104px;
     }
   }
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:768px) and(max-width:1279px) {
+    flex-basis: calc((100% - 3 * 60px) / 3);
+    margin: 30px;
+    font-family: $primary-font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.04em;
+
+    color: $primary-text-color;
+  }
+  @media screen and(min-width:1280px) {
     flex-basis: calc((100% - 3 * 30px) / 3);
     margin: 15px;
+
+    font-family: $primary-font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 58px;
+    line-height: 1.13;
+
+    letter-spacing: 0.04em;
+
+    color: #d41443;
   }
 }
+
 .item__content {
   @media screen and(max-width:767px) {
-    font-family: DM Sans;
+    font-family: $secondary-font-family;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
-    line-height: 170%;
+    line-height: 1.66;
+    text-transform: none;
 
     padding-top: 24px;
 
-    color: #000000;
+    color: $fifth-text-color;
   }
   @media screen and(min-width:768px) {
-    font-family: DM Sans;
+    font-family: $secondary-font-family;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0;
+
+    padding-top: 13px;
+
+    color: $fifth-text-color;
+  }
+  @media screen and(min-width:1280px) {
+    font-family: $secondary-font-family;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    line-height: 176%;
+    line-height: 1.76;
 
     letter-spacing: 0.02em;
   }
