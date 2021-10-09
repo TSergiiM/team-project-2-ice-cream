@@ -12,7 +12,61 @@
   }
 }
 .item__iconfirst::before {
-  background-image: url();
+  display: flex;
+  margin-bottom: 16px;
+  width: 33px;
+  height: 50px;
+  content: '';
+  background-image: url(../images/advantages/advantagesicon1.png);
+  background-repeat: no-repeat;
+
+  //   @media (min-divice-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //     background-image: url(../images/advantages/advantagesicon1@2x.png);
+  //     width: 66px;
+  //     height: 100px;
+  //   }
+  @media screen and(min-width:768px) {
+    margin-bottom: 36px;
+  }
+  @media screen and(min-width:1280px) {
+    margin-bottom: 40px;
+  }
+}
+.item__iconsecond::before {
+  display: flex;
+  content: '';
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+  background-image: url(../images/advantages/advantagesicon2.png);
+
+  @media screen and(max-width:767px) {
+    margin-top: 38px;
+  }
+  @media screen and(min-width:768px) {
+    margin-bottom: 36px;
+  }
+  @media screen and(min-width:1280px) {
+    margin-bottom: 40px;
+  }
+}
+.item__iconthird::before {
+  display: flex;
+  content: '';
+  width: 44px;
+  height: 50px;
+  margin-bottom: 16px;
+  background-image: url(../images/advantages/advantagesicon3.png);
+
+  @media screen and(max-width:767px) {
+    margin-top: 38px;
+  }
+  @media screen and(min-width:768px) {
+    margin-bottom: 36px;
+  }
+  @media screen and(min-width:1280px) {
+    margin-bottom: 40px;
+  }
 }
 .advantages__item {
   @media screen and(max-width:767px) {
@@ -20,15 +74,11 @@
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
-    line-height: 41px;
+    line-height: 1.13;
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
     color: $primary-text-color;
-
-    &:not(:last-child) {
-      padding-bottom: 104px;
-    }
   }
   @media screen and(min-width:768px) and(max-width:1279px) {
     flex-basis: calc((100% - 3 * 60px) / 3);
@@ -37,7 +87,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 48px;
-    line-height: 55px;
+    line-height: 1.14;
     letter-spacing: 0.04em;
 
     color: $primary-text-color;
