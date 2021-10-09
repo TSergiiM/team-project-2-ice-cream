@@ -2,9 +2,9 @@
     <div class="header__container container">
         <a class="logo" href="">
             <picture>
-                <source srcset="./images/header/logo.jpg 1x,
-                ./images/header/logo@2x.jpg 2x">
-                <img class="logo" src="./images/header/logo.jpg" alt="logo" width="199" height="50">
+                <source srcset="./images/header/logo.png 1x,
+                ./images/header/logo@2x.png 2x">
+                <img class="logo" src="./images/header/logo.png" alt="logo" width="199" height="50">
             </picture>
         </a>
         <nav class="nav js-menu-container" id="mobile-menu">
@@ -12,6 +12,12 @@
                     <svg width="14" height="14" aria-label="mobile menu toggle">
                         <use class="icon__close" href=""></use>
                     </svg>
+                </button>
+                <button class="nav__btn--mobile button-white" type="button">
+                    Buy now
+                    <!-- <svg class="btn-icon">
+                                        <use href=""></use>
+                                    </svg> -->
                 </button>
                 <ul class="nav__list">
                     <li class="nav__item">
@@ -30,14 +36,8 @@
                         <a class="nav__link" href="">Contact</a>
                     </li>
                 </ul>
-                <button class="nav__btn button-white" type="button">
-                    Buy now
-                    <!-- <svg class="btn-icon">
-                        <use href=""></use>
-                    </svg> -->
-                </button>
         </nav>
-        <button class="mobile-menu__btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <button class="mobile-menu__btn--open js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
             <svg class="icon__menu" width="20" height="12"  aria-label="mobile menu toggle">
                 <use href=""></use>
             </svg>
