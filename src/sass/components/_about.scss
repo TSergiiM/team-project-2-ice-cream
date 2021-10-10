@@ -108,7 +108,17 @@
 }
 
 .about__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @media screen and (max-width: 767px) {
         margin-left: 50px;
     }
+}
+
+.about__button-icon {
+    display: flex;
+    width: 10px;
+    height: 20px;
+    margin-left: 10px;
 }
