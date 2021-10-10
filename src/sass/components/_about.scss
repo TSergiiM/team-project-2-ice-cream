@@ -116,8 +116,10 @@
     }
 }
 
-about__button-icon {
+.about__button-icon {
+    display: flex;
     width: 10px;
     height: 20px;
     margin-left: 10px;
+    background-color: transparent;
 }
