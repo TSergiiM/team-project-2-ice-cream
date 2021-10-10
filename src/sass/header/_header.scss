@@ -8,8 +8,8 @@
   align-items: center;
   justify-content: space-between;
 
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 6px 20px 0 20px;
+  padding-top: 6px;
   margin-left: auto;
   margin-right: auto;
 
@@ -21,39 +21,37 @@
     justify-content: flex-start;
 
     width: 768px;
-    padding-left: 36px;
-    padding-right: 36px;
+    padding: 35px 36px 0 36px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 1200px;
-    padding-left: 40px;
-    padding-right: 80px;
+    padding: 35px 100px 0 40px;
   }
 }
 
 .logo {
   display: block;
-  margin: 6px 0;
   width: 199px;
 
   @media screen and (min-width: 768px) {
-    margin: 35px 0;
+    // margin: 35px 0;
   }
 }
 
 .nav {
+  z-index: 4;
+
   @media screen and (max-width: 1279px) {
     position: fixed;
     top: 0;
     right: 0;
     width: 250px;
     height: 100vh;
-    z-index: 2;
 
     background-color: #e17992;
 
-    padding: 60px 20px;
+    padding: 60px 0px;
     transform: translateX(100%);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -75,15 +73,22 @@
   cursor: pointer;
 
   fill: $fourth-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 1280px) {
     display: none;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $primary-text-color;
   }
 }
 
 .nav__btn-modal {
   display: flex;
   align-items: center;
+  margin-left: 20px;
   @media screen and (min-width: 1280px) {
     display: none;
   }
@@ -92,14 +97,11 @@
 .button__icon {
   fill: $primary-text-color;
   margin-left: 15px;
-  // display: blok;
-  // width: 10px;
-  // height: 20px;
 }
 
 .nav__list {
   @media screen and (max-width: 1279px) {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -107,13 +109,22 @@
   }
 }
 
-.nav__item + .nav__item {
+.nav__item {
   @media screen and (max-width: 1279px) {
-    margin-top: 22px;
+    padding: 12px 0 12px 20px;
   }
 
-  @media screen and (min-width: 1280px) {
-    margin-left: 35px;
+  &:nth-child(2n + 1) {
+    @media screen and (max-width: 1279px) {
+      border-top: 1px solid #e18298;
+      border-bottom: 1px solid #e18298;
+    }
+  }
+
+  & + & {
+    @media screen and (min-width: 1280px) {
+      margin-left: 35px;
+    }
   }
 }
 
@@ -140,13 +151,26 @@
   border: none;
   cursor: pointer;
 
+  z-index: 3;
+
   @media screen and(min-width: 1280px) {
     display: none;
+  }
+
+  &:hover,
+  &:focus {
+    fill: #ffffff;
   }
 }
 
 .icon__menu {
   stroke: $primary-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .header__btn-menu:hover &,
+  .header__btn-menu:focus & {
+    stroke: #ffffff;
+  }
 }
 
 .header__btn-modal {

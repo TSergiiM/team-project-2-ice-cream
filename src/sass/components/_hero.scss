@@ -5,19 +5,29 @@ a {
 }
 
 .hero {
-  padding-top: 130px;
+  padding-top: 135px;
   padding-bottom: 160px;
   background-color: #ffb8ca;
 
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+  }
+
   @media screen and (min-width: 768px) {
-    padding-top: 0;
+    padding-top: 15px;
     padding-bottom: 35px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 50px;
+    padding-top: 65px;
     padding-bottom: 55px;
   }
+}
+
+.hero .container {
+  position: relative;
+
+  z-index: 2;
 }
 
 .hero__container {
@@ -66,6 +76,7 @@ a {
   display: none;
   @media screen and (min-width: 768px) {
     display: block;
+    margin-right: 10px;
   }
 }
 
@@ -215,4 +226,87 @@ a {
 .hero__btn--more {
   display: block;
   fill: $primary-text-color;
+}
+
+.hero__img {
+  position: absolute;
+}
+
+.hero__img--jug {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    left: 40px;
+    bottom: -10px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: -10px;
+    bottom: -10px;
+  }
+}
+
+.hero__img--icecream {
+  bottom: -160px;
+  left: 32%;
+
+  z-index: -1;
+
+  @media screen and (min-width: 768px) {
+    left: 380px;
+    bottom: -35px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 490px;
+    bottom: -55px;
+
+    z-index: 1;
+  }
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    border-radius: 50%;
+    background-color: $secondary-text-color;
+    z-index: -1;
+
+    width: 345px;
+    height: 345px;
+    top: -10px;
+    left: -65px;
+
+    @media screen and (min-width: 768px) {
+      width: 325px;
+      height: 325px;
+      top: -45px;
+      left: -70px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 538px;
+      height: 538px;
+      left: -136px;
+      top: -50px;
+    }
+  }
+}
+
+.hero__img--girl {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  z-index: 1;
+
+  @media screen and (min-width: 768px) {
+    right: 35px;
+    bottom: -35px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    right: -5px;
+    bottom: -55px;
+  }
 }
