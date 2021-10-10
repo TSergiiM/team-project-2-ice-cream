@@ -3,13 +3,43 @@
   background-color: #ffb8ca;
 }
 
-.logo {
-  width: 199px;
-}
-
 .header__container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    justify-content: flex-start;
+
+    width: 768px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1200px;
+    padding-left: 40px;
+    padding-right: 80px;
+  }
+}
+
+.logo {
+  display: block;
+  margin: 6px 0;
+  width: 199px;
+
+  @media screen and (min-width: 768px) {
+    margin: 35px 0;
+  }
 }
 
 .nav {
@@ -33,34 +63,55 @@
   }
 }
 
-.nav__btn--mobile {
-  @media screen and (min-width: 1280px) {
-    display: none;
-  }
-}
-
-.mobile-menu__btn--close {
+.nav__btn-close {
   position: absolute;
-  top: 23px;
-  right: 28px;
+  top: 25px;
+  right: 25px;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  fill: $fourth-text-color;
 
   @media screen and (min-width: 1280px) {
     display: none;
   }
 }
 
-.mobile-menu__btn--open {
-  @media screen and(min-width: 1280px) {
+.nav__btn-modal {
+  display: flex;
+  align-items: center;
+  @media screen and (min-width: 1280px) {
     display: none;
   }
+}
+
+.button__icon {
+  fill: $primary-text-color;
+  margin-left: 15px;
 }
 
 .nav__list {
-  margin-top: 30px;
+  @media screen and (max-width: 1279px) {
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+  }
 }
 
 .nav__item + .nav__item {
-  margin-top: 22px;
+  @media screen and (max-width: 1279px) {
+    margin-top: 22px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 35px;
+  }
 }
 
 .nav__link {
@@ -70,13 +121,40 @@
   line-height: calc(18 / 14);
 
   color: $fourth-text-color;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: calc(21 / 16);
+
+    color: $fourth-text-color;
+  }
 }
 
-.nav__btn {
-  font-family: $secondary-font-family;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(21 / 16);
+.header__btn-menu {
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 
-  color: $primary-text-color;
+  @media screen and(min-width: 1280px) {
+    display: none;
+  }
+}
+
+.icon__menu {
+  stroke: $primary-text-color;
+}
+
+.header__btn-modal {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 1279px) {
+    margin-left: 30px;
+  }
 }
