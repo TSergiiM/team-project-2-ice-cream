@@ -1,0 +1,122 @@
+.slider {
+  margin: 0 auto;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    max-width: 280px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 620px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 926px;
+  }
+}
+.slider__item {
+  text-align: center;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 64%;
+    left: 23%;
+    width: 54px;
+    height: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &::after {
+      bottom: 50%;
+      left: 6%;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &::after {
+      bottom: 48%;
+      left: 6%;
+    }
+  }
+}
+.slider__image {
+  margin: 0 auto;
+}
+.slider__text {
+  position: relative;
+  z-index: 3;
+  margin: 0 auto;
+  height: 100%;
+  font-family: 'DM Sans';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.86;
+  color: #000000;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 30px,
+    #e1e1e1 30px,
+    #e1e1e1 31px
+  );
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: -60px;
+    left: 50%;
+    width: 32px;
+    height: 4px;
+    transform: translate(-50%);
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    max-width: 157px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 460px;
+    font-size: 14px;
+    line-height: 2.1;
+    letter-spacing: 0.04em;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 27px,
+      #e1e1e1 27px,
+      #e1e1e1 29px
+    );
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 750px;
+    font-size: 16px;
+    line-height: 1.9;
+  }
+}
+.slider__box {
+  position: relative;
+  padding: 40px 0 30px;
+  margin: 30px auto 50px;
+  background-color: #fafafa;
+
+  @media screen and (min-width: 768px) {
+    padding: 30px 40px;
+    max-width: 620px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 926px;
+    padding: 32px 50px;
+  }
+}
+.slider__name {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+  color: #000000;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+  }
+}
