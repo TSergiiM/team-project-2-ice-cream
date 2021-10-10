@@ -69,8 +69,6 @@
 }
 .advantages__item {
   @media screen and(max-width:767px) {
-    font-family: $primary-font-family;
-
     font-weight: 500;
     font-size: 36px;
     line-height: 1.13;
@@ -82,7 +80,6 @@
   @media screen and(min-width:768px) and(max-width:1279px) {
     flex-basis: calc((100% - 3 * 60px) / 3);
     margin: 30px;
-    font-family: $primary-font-family;
 
     font-weight: 500;
     font-size: 48px;
@@ -94,8 +91,6 @@
   @media screen and(min-width:1280px) {
     flex-basis: calc((100% - 3 * 30px) / 3);
     margin: 15px;
-
-    font-family: $primary-font-family;
 
     font-weight: 500;
     font-size: 58px;
