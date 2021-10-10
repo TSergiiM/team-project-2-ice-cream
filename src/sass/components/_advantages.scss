@@ -71,7 +71,6 @@
 .advantages__item {
   @media screen and(max-width:767px) {
     font-family: $primary-font-family;
-    font-style: normal;
     font-weight: normal;
     font-size: 36px;
     line-height: 1.13;
@@ -84,7 +83,6 @@
     flex-basis: calc((100% - 3 * 60px) / 3);
     margin: 30px;
     font-family: $primary-font-family;
-    font-style: normal;
     font-weight: normal;
     font-size: 48px;
     line-height: 1.14;
@@ -97,21 +95,19 @@
     margin: 15px;
 
     font-family: $primary-font-family;
-    font-style: normal;
     font-weight: normal;
     font-size: 58px;
     line-height: 1.13;
 
     letter-spacing: 0.04em;
 
-    color: #d41443;
+    color: $primary-text-color;
   }
 }
 
 .item__content {
   @media screen and(max-width:767px) {
     font-family: $secondary-font-family;
-    font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 1.66;
@@ -124,7 +120,6 @@
   @media screen and(min-width:768px) {
     font-family: $secondary-font-family;
 
-    font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.71;
@@ -136,7 +131,6 @@
   }
   @media screen and(min-width:1280px) {
     font-family: $secondary-font-family;
-    font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.76;
