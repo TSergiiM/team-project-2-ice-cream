@@ -49,7 +49,7 @@
     right: 0;
     width: 250px;
     height: 100vh;
-    z-index: 1;
+    z-index: 2;
 
     background-color: #e17992;
 
@@ -92,6 +92,9 @@
 .button__icon {
   fill: $primary-text-color;
   margin-left: 15px;
+  // display: blok;
+  // width: 10px;
+  // height: 20px;
 }
 
 .nav__list {

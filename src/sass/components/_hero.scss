@@ -82,13 +82,15 @@ a {
 
   color: $primary-text-color;
 
+  z-index: 1;
+
   & + & {
     margin-top: 15px;
   }
 
   &::after {
-    content: '';
-    display: block;
+    content: ' ';
+    // display: block;
     position: absolute;
     top: -2px;
     right: 0;
@@ -97,6 +99,15 @@ a {
     border-radius: 50%;
     background-color: #ffffff;
     transform: translateX(50%);
+
+    z-index: -1;
+
+    @media screen and (min-width: 1280px) {
+      top: -4px;
+      right: 0;
+      width: 30px;
+      height: 30px;
+    }
   }
 
   @media screen and (min-width: 1280px) {
@@ -119,19 +130,6 @@ a {
   @media screen and (min-width: 1280px) {
     font-size: 14px;
     line-height: calc(18 / 14);
-
-    &::after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: -4px;
-      right: 0;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background-color: #ffffff;
-      transform: translateX(50%);
-    }
   }
 }
 
