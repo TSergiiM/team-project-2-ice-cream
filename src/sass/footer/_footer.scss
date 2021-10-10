@@ -90,14 +90,14 @@
 .section-border {
   border-bottom: 1px solid #e1e1e1;
 }
-.footer-wrap__correct {
+.title-wrap__edit {
   text-align: left;
 }
-.footer-wrap__correct:nth-child(2) {
+.title-wrap__edit:nth-child(2) {
   @media (min-width: 768px) {
     letter-spacing: 0.06em;
   }
 }
-.footer-wrap__correct:not(:last-child) {
+.title-wrap__edit:not(:last-child) {
   margin-bottom: 17px;
 }
