@@ -148,9 +148,17 @@ a {
   margin-top: 20px;
   padding: 8px 15px;
 
+  font-family: $secondary-font-family;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: calc(10 / 8);
+
   @media screen and (min-width: 1280px) {
     margin-top: 25px;
     padding: 10px 20px;
+
+    font-size: 14px;
+    line-height: calc(18 / 14);
   }
 
   &.button-white {
@@ -159,18 +167,6 @@ a {
     @media screen and (min-width: 1280px) {
       margin-left: 15px;
     }
-  }
-}
-
-.hero__link {
-  font-family: $secondary-font-family;
-  font-weight: 400;
-  font-size: 8px;
-  line-height: calc(10 / 8);
-
-  @media screen and (min-width: 1280px) {
-    font-size: 14px;
-    line-height: calc(18 / 14);
   }
 }
 
