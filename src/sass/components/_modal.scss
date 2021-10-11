@@ -1,0 +1,223 @@
+.backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transform: scale(1);
+
+  z-index: 4;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: scale(1.5);
+}
+
+.modal {
+  position: absolute;
+  width: 450px;
+
+  @media screen and (max-width: 450px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
+
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal__btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  fill: #000000;
+  background-color: #ffffff;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: $primary-text-color;
+  }
+}
+
+.btn-close__icon {
+  display: block;
+  fill: inherit;
+}
+
+.modal__form {
+  text-align: center;
+}
+
+.modal__title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
+
+  color: $fifth-text-color;
+}
+
+.modal__list {
+  text-align: start;
+  margin-top: 12px;
+}
+
+.modal__item + .modal__item {
+  margin-top: 10px;
+}
+
+.modal__label {
+  display: block;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: $fifth-text-color;
+}
+
+.modal__wrap {
+  display: block;
+  position: relative;
+
+  margin-top: 4px;
+}
+
+.modal__input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border: 1px solid $primary-text-color;
+  }
+}
+
+.modal__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal__input:focus + &,
+  .modal__input:not(:placeholder-shown) + & {
+    fill: $primary-text-color;
+  }
+}
+
+.modal__comment {
+  width: 100%;
+  height: 120px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  cursor: pointer;
+
+  padding: 12px 16px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus {
+    border: 1px solid $primary-text-color;
+  }
+}
+
+.modal__checkbox {
+  margin-top: 20px;
+}
+
+.check__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+  color: #757575;
+
+  cursor: pointer;
+}
+
+.check__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  border: 2px solid $fifth-text-color;
+  border-radius: 2px;
+  margin-right: 6px;
+}
+
+.checkbox:checked + .check__label .check__icon {
+  background-color: $primary-text-color;
+  border: transparent;
+}
+
+.check__policy-link {
+  text-decoration: underline;
+  color: $primary-text-color;
+  margin-left: 5px;
+}
+
+.modal__btn {
+  margin: 30px auto 0 auto;
+  padding: 15px 55px;
+  border-radius: 40px;
+}
