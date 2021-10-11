@@ -96,13 +96,12 @@
         margin-right: 50px;
     }
     @media screen and (min-width: 768px) {
-        font-size: 14px;
         line-height: 1.76;
         margin-right: 35px;
         margin-bottom: 50px;
     }
     @media screen and (min-width: 1280px) {
-        font-size: 12px;
+        font-size: 16px;
         line-height: 1.94;
     }
 }
@@ -117,7 +116,6 @@
 }
 
 .about__button-icon {
-    display: flex;
     width: 10px;
     height: 20px;
     margin-left: 10px;
