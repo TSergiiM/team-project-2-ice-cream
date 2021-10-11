@@ -186,6 +186,8 @@
     }
   }
   & .button-pink {
+    display: flex;
+    align-items: center;
     padding: 10px 20px;
     @media screen and (min-width: 768px) {
       padding: 10px 33px;
@@ -197,8 +199,6 @@
   align-items: center;
 }
 .button-pink {
-  display: flex;
-  align-items: center;
   .button__icon {
     fill: $fourth-text-color;
   }
