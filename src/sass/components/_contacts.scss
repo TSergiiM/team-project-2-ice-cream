@@ -13,7 +13,6 @@
 }
 .contacts {
   margin-bottom: 54px;
-
   position: relative;
   bottom: 84px;
   @media screen and (min-width: 768px) {
@@ -51,7 +50,6 @@
 .contacts__categories {
   display: inline-block;
   font-family: $secondary-font-family;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
@@ -74,7 +72,6 @@
 .contacts__tittle {
   margin-bottom: 10px;
   font-family: $secondary-font-family;
-  font-style: normal;
   font-size: 12px;
   font-weight: 500;
   line-height: 1.86;
@@ -94,7 +91,6 @@
   font-size: 12px;
   color: $third-text-color;
   font-family: $secondary-font-family;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.66;
   @media screen and (min-width: 768px) {
@@ -132,7 +128,6 @@
 }
 .contacts-day {
   font-family: $secondary-font-family;
-  font-style: normal;
   font-size: 12px;
   font-weight: 500;
   line-height: 1.86;
@@ -146,7 +141,6 @@
 }
 .contacts-time {
   font-family: $secondary-font-family;
-  font-style: normal;
   font-size: 12px;
   font-weight: 500;
   line-height: 1.86;
@@ -163,7 +157,6 @@
 .contacts-address__link {
   color: $third-text-color;
   font-family: $secondary-font-family;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
@@ -180,9 +173,7 @@
   @media screen and (min-width: 768px) {
     flex-direction: unset;
     justify-content: center;
-    // text-align: center;
   }
-  // margin-top: 54px;
 }
 .contact-buttons__item {
   display: flex;
@@ -194,9 +185,21 @@
       margin-bottom: 0;
     }
   }
+  & .button-pink {
+    padding: 10px 20px;
+    @media screen and (min-width: 768px) {
+      padding: 10px 33px;
+    }
+  }
 }
 .button-white--long {
-  @media screen and(max-width:767px) {
-    min-width: 182px;
+  display: flex;
+  align-items: center;
+}
+.button-pink {
+  display: flex;
+  align-items: center;
+  .button__icon {
+    fill: $fourth-text-color;
   }
 }
