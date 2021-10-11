@@ -1,4 +1,4 @@
- .homemade-ice{
+.footer {
   background-color: $first-section-background-color;
 }
 .footer-networks {
@@ -47,7 +47,7 @@
     line-height: 1.86;
     letter-spacing: 0.02em;
     padding-top: 30px;
-    padding-bottom: 20px ;
+    padding-bottom: 20px;
     min-width: 100%;
     @media (min-width: 1280px) {
       padding-top: 10px;
@@ -100,4 +100,3 @@
 .title-wrap__edit:not(:last-child) {
   margin-bottom: 17px;
 }
-   
