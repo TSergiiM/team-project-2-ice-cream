@@ -1,7 +1,7 @@
 .about__bg {
     background-color: $first-section-background-color;
     @media screen and(max-width: 767px) {
-        background-image: url('../images/about/aboutmilk.png');
+        background-image: url('../images/about/aboutmilk@1x.png');
         background-size: 100% auto;
         background-repeat: no-repeat;
         background-position: center center;
@@ -12,7 +12,7 @@
         background-image: url('../images/about/aboutmilk@2x.png');
     }
     @media screen and(min-width:768px) {
-        background-image: url('../images/about/aboutmilk.png');
+        background-image: url('../images/about/aboutmilk@1x.png');
         background-size: 100% auto;
         background-repeat: no-repeat;
         background-position: center center;
@@ -23,7 +23,7 @@
         background-image: url('../images/about/aboutmilk@2x.png');
     }
     @media screen and(min-width:1280px) {
-        background-image: url('../images/about/aboutmilk.png');
+        background-image: url('../images/about/aboutmilk@1x.png');
         background-size: 100% auto;
         background-repeat: no-repeat;
         background-position: center center;
