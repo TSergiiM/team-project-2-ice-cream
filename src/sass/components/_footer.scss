@@ -33,6 +33,8 @@
   color: $primary-text-color;
 }
 .footer-copy {
+  position: relative;
+  display: block;
   font-family: $secondary-font-family;
   font-weight: 700;
   line-height: 1.52;
@@ -86,9 +88,7 @@
 .contacts-wrap {
   display: inline-flex;
 }
-.section-border {
-  border-bottom: 1px solid #e1e1e1;
-}
+
 .title-wrap__edit {
   text-align: left;
 }
@@ -99,4 +99,20 @@
 }
 .title-wrap__edit:not(:last-child) {
   margin-bottom: 17px;
+}
+.footer-copy::before {
+  content: '';
+  width: 1300px;
+  height: 1px;
+  position: absolute;
+  bottom: 85px;
+  left:-150px;
+  border-radius: 2px;
+  background-color: #e1e1e1;
+  @media (min-width: 768px) {
+    bottom: 70px;
+  }
+  @media (min-width: 1280px) {
+    bottom: 40px;
+  }
 }
