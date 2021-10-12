@@ -15,19 +15,26 @@
                 </li>
             </ul>
         </div>
-        <button class="hero__btn button-pink" onclick="window.location.href = '#products' ; " type="button">
-            Products
-        </button>
-        <button class="hero__btn button-white" onclick="window.location.href = '#about' ; " type="button">
-            How it’s made?
-        </button>
-        <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et</p>
-        <button class="hero__btn-text">
-            <svg width="8" height="8" class="hero__btn--more">
-                <use href="./images/sprite.svg#icon-arrowright"></use>
-            </svg>
-        </button>
+        <ul class="hero__list-btn">
+            <li class="hero__item-btn">
+                <button class="hero__btn button-pink" onclick="window.location.href = '#products' ; " type="button">
+                    Products
+                </button></li>
+            <li class="hero__item-btn">
+                <button class="hero__btn button-white" onclick="window.location.href = '#about' ; " type="button">
+                    How it’s made?
+                </button>
+            </li>
+        </ul>
+        <div class="hero__container-text">
+            <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et</p>
+            <button class="hero__btn-text">
+                <svg width="8" height="8" class="hero__btn--more">
+                    <use href="./images/sprite.svg#icon-arrowright"></use>
+                </svg>
+            </button>
+        </div>
         <picture class="hero__img hero__img--jug">
             <source srcset="./images/hero/jugofmilk__desktop.png 1x, 
             ./images/hero/jugofmilk__desktop@2x.png 2x"
