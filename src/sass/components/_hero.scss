@@ -15,12 +15,12 @@ a {
 
   @media screen and (min-width: 768px) {
     padding-top: 15px;
-    padding-bottom: 35px;
+    padding-bottom: 175px;
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 65px;
-    padding-bottom: 55px;
+    padding-bottom: 290px;
   }
 }
 
@@ -144,8 +144,24 @@ a {
   }
 }
 
-.hero__btn {
+.hero__list-btn {
+  display: flex;
   margin-top: 20px;
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 25px;
+  }
+}
+
+.hero__item-btn + .hero__item-btn {
+  margin-left: 10px;
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 15px;
+  }
+}
+
+.hero__btn {
   padding: 8px 15px;
 
   font-family: $secondary-font-family;
@@ -154,19 +170,21 @@ a {
   line-height: calc(10 / 8);
 
   @media screen and (min-width: 1280px) {
-    margin-top: 25px;
     padding: 10px 20px;
 
     font-size: 14px;
     line-height: calc(18 / 14);
   }
+}
 
-  &.button-white {
-    margin-left: 10px;
+.hero__container-text {
+  position: absolute;
+  left: 160px;
+  bottom: -140px;
 
-    @media screen and (min-width: 1280px) {
-      margin-left: 15px;
-    }
+  @media screen and (min-width: 1280px) {
+    left: 210px;
+    bottom: -235px;
   }
 }
 
@@ -180,9 +198,6 @@ a {
 
   max-width: 115px;
 
-  margin-top: 65px;
-  margin-left: 120px;
-
   color: $fourth-text-color;
 
   @media screen and (min-width: 768px) {
@@ -191,8 +206,6 @@ a {
 
   @media screen and (min-width: 1280px) {
     min-width: 200px;
-    margin-top: 110px;
-    margin-left: 180px;
 
     font-size: 14px;
     line-height: 140%;
@@ -205,8 +218,8 @@ a {
   border: none;
 
   margin-top: 10px;
-  margin-left: 120px;
   padding: 5px;
+  cursor: pointer;
 
   @media screen and (min-width: 768px) {
     display: block;
@@ -214,7 +227,6 @@ a {
 
   @media screen and (min-width: 1280px) {
     margin-top: 20px;
-    margin-left: 180px;
     padding: 9px;
   }
 }
@@ -234,13 +246,13 @@ a {
   }
 
   @media screen and (min-width: 768px) {
-    left: 40px;
-    bottom: -10px;
+    left: 35px;
+    bottom: -145px;
   }
 
   @media screen and (min-width: 1280px) {
     left: -10px;
-    bottom: -10px;
+    bottom: -245px;
   }
 }
 
@@ -252,12 +264,12 @@ a {
 
   @media screen and (min-width: 768px) {
     left: 380px;
-    bottom: -35px;
+    bottom: -175px;
   }
 
   @media screen and (min-width: 1280px) {
     left: 490px;
-    bottom: -55px;
+    bottom: -290px;
 
     z-index: 1;
   }
@@ -298,11 +310,11 @@ a {
 
   @media screen and (min-width: 768px) {
     right: 35px;
-    bottom: -35px;
+    bottom: -175px;
   }
 
   @media screen and (min-width: 1280px) {
     right: -5px;
-    bottom: -55px;
+    bottom: -290px;
   }
 }
