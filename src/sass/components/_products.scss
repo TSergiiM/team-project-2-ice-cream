@@ -11,6 +11,10 @@
   }
 }
 .products__item {
+  @media screen and (max-width: 767px) {
+    max-width: 280px;
+    margin: 0 auto;
+  }
   border-radius: 24px;
   display: flex;
   flex-direction: column;
@@ -67,23 +71,23 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $fourth-text-color;
+  margin-bottom: 30px;
 
   &::after {
     display: block;
     content: '...';
-    margin: 30px auto;
+    margin-top: 30px;
   }
 }
 
 .products__text {
   font-family: $secondary-font-family;
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.52;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: $fourth-text-color;
   margin-bottom: 30px;
 }
 
