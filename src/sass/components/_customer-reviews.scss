@@ -1,8 +1,4 @@
-.section--customer {
-  padding-bottom: 230px;
-}
-
-.customer {
+.slider {
   margin-left: auto;
   margin-right: auto;
   max-width: 280px;
@@ -16,7 +12,7 @@
   }
 }
 
-.customer__item {
+.slider__item {
   position: relative;
   text-align: center;
 
@@ -49,7 +45,7 @@
   }
 }
 
-.customer__image {
+.slider__image {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 29px;
@@ -64,7 +60,7 @@
   }
 }
 
-.customer__wrapper {
+.slider__box {
   position: relative;
 
   padding: 20px 50px;
@@ -97,7 +93,7 @@
   }
 }
 
-.customer__description {
+.slider__description {
   position: relative;
   z-index: 10;
   margin-left: auto;
@@ -132,7 +128,7 @@
   }
 }
 
-.customer__text {
+.slider__text {
   font-family: $secondary-font-family;
   font-weight: 500;
   line-height: 1.86;
@@ -151,9 +147,11 @@
 .slick-track {
   display: flex;
 }
+
 .slick-list {
   overflow: hidden;
 }
+
 .slick-dots {
   display: flex;
   justify-content: center;
@@ -165,13 +163,15 @@
   }
 
   & button {
+    font-size: 0;
     width: 12px;
     height: 12px;
     background-color: #d9d9d9;
     border-radius: 50%;
-    border-color: transparent;
+    border: none;
   }
 }
+
 .slick-dots li.slick-active button {
   background-color: transparent;
   border-radius: 0;
