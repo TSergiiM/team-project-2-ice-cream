@@ -46,8 +46,6 @@
 
 .about__box {
     @media screen and (max-width: 767px) {
-        display: flex;
-        flex-direction: column;
         margin-top: 25px;
     }
     @media screen and (min-width: 768px) {
@@ -56,6 +54,9 @@
 }
 
 .about__description {
+    @media screen and (max-width: 767px) {
+        padding: 0 50px;
+    }
     @media screen and (min-width: 768px) {
         max-width: 340px;
         margin-top: 100px;
@@ -92,8 +93,6 @@
         font-size: 12px;
         line-height: 1.66;
         margin-bottom: 40px;
-        margin-left: 50px;
-        margin-right: 50px;
     }
     @media screen and (min-width: 768px) {
         line-height: 1.76;
@@ -110,9 +109,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @media screen and (max-width: 767px) {
-        margin-left: 50px;
-    }
 }
 
 .about__button-icon {
