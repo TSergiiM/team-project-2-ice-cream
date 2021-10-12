@@ -190,10 +190,10 @@
 .contact-buttons__item {
   display: flex;
   justify-content: center;
-  margin-right: 15px;
   &:not(:last-child) {
     margin-bottom: 10px;
     @media screen and (min-width: 768px) {
+      margin-right: 15px;
       margin-bottom: 0;
     }
   }
