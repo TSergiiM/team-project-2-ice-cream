@@ -1,0 +1,41 @@
+.button-pink {
+  background-color: $primary-text-color;
+  color: $fourth-text-color;
+  border-radius: 22px;
+  cursor: pointer;
+  border: transparent;
+  padding: 10px 37px;
+  font-family: $secondary-font-family;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: #c7133e;
+  }
+}
+
+.button-white {
+  background-color: $fourth-text-color;
+  color: $primary-text-color;
+  border-radius: 22px;
+  cursor: pointer;
+  border: transparent;
+  padding: 10px 37px;
+  font-family: $secondary-font-family;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: #ecebeb;
+  }
+}
+
+.button-normal {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+}

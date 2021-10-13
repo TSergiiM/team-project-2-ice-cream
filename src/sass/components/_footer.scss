@@ -1,0 +1,102 @@
+.footer {
+  background-color: $first-section-background-color;
+}
+.footer-networks {
+  display: flex;
+  margin-bottom: 46px;
+}
+.footer-networks__item:not(:last-child) {
+  margin-right: 28px;
+}
+.footer-networks__icon {
+  width: 32px;
+  height: 32px;
+  fill: #fea5bb;
+  transition: fill 250ms linear;
+}
+.footer-networks__link:hover .footer-networks__icon,
+.footer-networks__link:focus .footer-networks__icon {
+  fill: $primary-text-color;
+}
+.footer-contacts {
+  font-family: $secondary-font-family;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  color: $fifth-text-color;
+}
+.footer-contacts-link {
+  font-family: $secondary-font-family;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  color: $primary-text-color;
+}
+.footer-copy {
+  font-family: $secondary-font-family;
+  font-weight: 700;
+  line-height: 1.52;
+  text-align: center;
+  color: $third-text-color;
+  padding-top: 22px;
+  padding-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 145px;
+  @media (min-width: 768px) {
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    min-width: 100%;
+    @media (min-width: 1280px) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  @media (min-width: 1280px) {
+    justify-content: space-between;
+  }
+}
+.footer-box {
+  margin-bottom: 43px;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 91px;
+  }
+}
+.title-wrap {
+  margin-bottom: 43px;
+  display: inline-block;
+  max-width: 234px;
+  @media (min-width: 768px) {
+    min-width: 340px;
+    margin-bottom: 0px;
+  }
+  @media (min-width: 1280px) {
+    min-width: 50%;
+  }
+}
+.contacts-wrap {
+  display: inline-flex;
+}
+.section-border {
+  border-bottom: 1px solid #e1e1e1;
+}
+.title-wrap__edit {
+  text-align: left;
+}
+.title-wrap__edit:nth-child(2) {
+  @media (min-width: 768px) {
+    letter-spacing: 0.06em;
+  }
+}
+.title-wrap__edit:not(:last-child) {
+  margin-bottom: 17px;
+}

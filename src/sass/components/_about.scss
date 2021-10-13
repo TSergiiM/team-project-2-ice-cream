@@ -1,0 +1,118 @@
+.about__bg {
+    background-color: $first-section-background-color;
+    @media screen and(max-width: 767px) {
+        background-image: url('../images/about/aboutmilk.png');
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('../images/about/aboutmilk@2x.png');
+    }
+    @media screen and(min-width:768px) {
+        background-image: url('../images/about/aboutmilk.png');
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('../images/about/aboutmilk@2x.png');
+    }
+    @media screen and(min-width:1280px) {
+        background-image: url('../images/about/aboutmilk.png');
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('../images/about/aboutmilk@2x.png');
+    }
+}
+
+.about__title {
+    @media screen and (max-width: 767px) {
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+    }
+}
+
+.about__box {
+    @media screen and (max-width: 767px) {
+        margin-top: 25px;
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.about__description {
+    @media screen and (max-width: 767px) {
+        padding: 0 50px;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 340px;
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+    @media screen and (min-width: 1280px) {
+        max-width: 463px;
+        margin-top: 110px;
+        margin-left: 75px;
+    }
+}
+
+.about__img {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 45px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-top: 50px;
+        margin-right: 20px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-top: 50px;
+    }
+}
+
+.about__text {
+    font-family: $secondary-font-family;
+    color: $third-text-color;
+    font-weight: 500;
+    &:first-child {
+        color: $fifth-text-color;
+    }
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+        line-height: 1.66;
+        margin-bottom: 40px;
+    }
+    @media screen and (min-width: 768px) {
+        line-height: 1.76;
+        margin-right: 35px;
+        margin-bottom: 50px;
+    }
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        line-height: 1.94;
+    }
+}
+
+.about__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__button-icon {
+    width: 10px;
+    height: 20px;
+    margin-left: 10px;
+}

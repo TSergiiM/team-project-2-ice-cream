@@ -1,0 +1,181 @@
+.slider {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 280px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 620px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 926px;
+  }
+}
+
+.slider__item {
+  position: relative;
+  text-align: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+
+    display: block;
+    width: 54px;
+    height: 40px;
+
+    bottom: 67%;
+    left: 22%;
+
+    background-image: url('../images/customer/quote.svg');
+  }
+
+  @media screen and (min-width: 768px) {
+    &::after {
+      bottom: 52%;
+      left: 7%;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &::after {
+      bottom: 47%;
+      left: 6%;
+    }
+  }
+}
+
+.slider__image {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 29px;
+  max-width: 85px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 19px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
+}
+
+.slider__box {
+  position: relative;
+
+  padding: 20px 50px;
+  margin-bottom: 52px;
+  background-color: #fafafa;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 42px;
+    padding: 30px 40px;
+    max-width: 620px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 34px;
+    max-width: 926px;
+    padding: 32px 52px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 4px;
+
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%);
+    background-image: url('../images/customer/dots.svg');
+  }
+}
+
+.slider__description {
+  position: relative;
+  z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: $secondary-font-family;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 2.55;
+  color: $fifth-text-color;
+  max-width: 157px;
+
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent,
+    transparent 27px,
+    #e1e1e1 0,
+    #e1e1e1 29px
+  );
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 2.16;
+    letter-spacing: 0.04em;
+    max-width: 460px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.86;
+    max-width: 750px;
+  }
+}
+
+.slider__text {
+  font-family: $secondary-font-family;
+  font-weight: 500;
+  line-height: 1.86;
+  color: $fifth-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+  }
+}
+
+// Стили Слик слайдера
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+
+  & li:not(:last-child) {
+    margin-right: 18px;
+  }
+
+  & button {
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    border: none;
+  }
+}
+
+.slick-dots li.slick-active button {
+  background-color: transparent;
+  border-radius: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../images/customer/home.svg');
+}

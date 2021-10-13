@@ -10,7 +10,8 @@
 @import './base/body';
 @import './base/container';
 @import './base/section';
-@import './header/header';
+@import './base/btn';
+@import './components/header';
 @import './components/hero';
 @import './components/products';
 @import './components/about';
@@ -18,4 +19,5 @@
 @import './components/customer-reviews';
 @import './components/gallery';
 @import './components/contacts';
-@import './footer/footer';
+@import './components/footer';
+@import './components/modal';
